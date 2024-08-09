@@ -1,0 +1,26 @@
+/* styles/Facilities.module.css */
+
+.facilities {
+    padding: 20px;
+    background-color: rgba(248, 216, 172, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0px;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .facilities h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .facilities ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .facilities li {
+    margin-bottom: 10px;
+  }
+  

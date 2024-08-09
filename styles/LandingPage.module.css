@@ -1,0 +1,138 @@
+/* styles/LandingPage.module.css */
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.landingPage {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.leftSection,
+.rightSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: width 0.7s ease-out, background-size 0.7s ease-out, background-position 0.7s ease-out; /* Smooth transition */
+}
+
+.leftSection {
+  background-color: #4bc0f1;
+  background-image: url('/left-bg3.png');
+  background-repeat: no-repeat;
+  background-size: 100%; /* Start at 100% */
+}
+
+.rightSection {
+  background-color: #f9a435;
+  background-image: url('/right-bg.png'); 
+  background-repeat: no-repeat;
+  background-size: 100%; /* Start at 100% */
+}
+
+/* Hover effect */
+.leftSection:hover,
+.rightSection:hover {
+  width: 85%; /* Expand the section to 85% width */
+}
+
+.leftSection:hover {
+  background-size: 120%; /* Smoothly increase the size of the background image */
+}
+
+.rightSection:hover {
+  background-size: 120%; /* Smoothly increase the size of the background image */
+}
+
+.leftSection:hover,
+.rightSection:hover {
+  background-position: center center; /* Ensure the background image remains centered */
+}
+
+.content {
+  color: white;
+  text-align: center;
+  max-width: 400px;
+}
+
+.heading2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.heading1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  margin-bottom: 30px;
+}
+
+.discoverButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.discoverButton:hover {
+  background-color: white;
+  color: #4bc0f1;
+}
+
+.rightSection .discoverButton:hover {
+  color: #f9a435;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs h2 {
+  font-size: 50px;
+  color: #fff;
+  margin: 10px;
+}
+
+.aboutUs p {
+  color: #fff;
+  text-align: center;
+}
+
+.arrowRight {
+  position: absolute;
+  left: 95%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10; /* It stays above other elements */
+}
+
+.arrowLeft {
+  position: absolute;
+  right: 95%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10; /* It stays above other elements */
+}
